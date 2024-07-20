@@ -3,10 +3,13 @@
   padding: 0;
 }
 body,html{
-  width: 100%;
-  height: 100%;
   box-sizing: border-box;
   font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  align-items: center;
+}
+.start{
+  min-height: 100vh;
 }
 
 a{
@@ -19,10 +22,11 @@ main{
   color: hsl(0, 0%, 95%); 
   background-color: hsl(0, 0%, 95%);
   margin: 1.5rem;
-  /* display: flex; */
-  background-color: darkgreen;
+  display: flex;
   border-radius: 10px;
   overflow: hidden;
+  max-width: 910px;
+  margin-inline: auto;
 }
 
 .card h2{
@@ -34,17 +38,24 @@ main{
 .card p{
   opacity: 0.6;
   line-height: 28px;
+  margin-bottom: 2.5rem;
 }
 
 .card a{
   border: 2px solid white;
   padding: 1em 2em;
   border-radius: 2em;
-  margin-top: 3rem;
+  margin-top: auto;
+  align-self: flex-start;
 }
-
+.card img{
+  width: 64px;
+  height: 40px;
+}
 .card{
   padding: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .orange-card{
