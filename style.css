@@ -11,6 +11,7 @@ body,html{
 
 a{
   color: inherit;
+  text-decoration: none;
 }
 
 main{
@@ -21,9 +22,28 @@ main{
 
 .card h2{
   text-transform: uppercase;
+  font-family: "Big Shoulders Display", sans-serif;
+}
+.card p{
+  opacity: 0.6;
+  line-height: 28px;
+}
+
+.card a{
+  border: 2px solid white;
+  padding: 1em 2em;
+  border-radius: 2em;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.card{
+  padding: 3rem;
 }
 
 .orange-card{
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   background-color: hsl(31, 77%, 52%);
 }
 
@@ -34,4 +54,6 @@ main{
 
 .darkcyan-card{
   background-color: hsl(179, 100%, 13%);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
